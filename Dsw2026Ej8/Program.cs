@@ -1,4 +1,5 @@
 ﻿using Dsw2026Ej8.Problema_N_1;
+using Dsw2026Ej8.Problema_N_2;
 
 namespace Dsw2026Ej8
 {
@@ -17,9 +18,14 @@ namespace Dsw2026Ej8
             Console.WriteLine("Etiqueta generada:");
             Console.WriteLine(etiqueta);
 
+            Class1 p2 = new Class1();
+            string resultado = p2.CrearResumenVenta(505, "Teclado Mecánico", 2, 50000m);
+            Console.WriteLine(resultado);
+
+
+
             Console.WriteLine("\nPresiona cualquier tecla para salir...");
             Console.ReadKey();
-
         }
     }
 }
