@@ -2,6 +2,7 @@
 using Dsw2026Ej8.Problema_N_2;
 using Dsw2026Ej8.Problema_N_3;
 using Dsw2026Ej8.Problema_N_4;
+using Dsw2026Ej8.Problema_N_5;
 
 namespace Dsw2026Ej8
 {
@@ -51,6 +52,22 @@ namespace Dsw2026Ej8
             Console.WriteLine($"Promedio Final: {promedio}");
 
             //PROBLEMA 5
+            Console.WriteLine("\n=== PROBLEMA 5 ===");
+            Problema5 p5 = new Problema5();
+
+            Sale ventaMinorista = new RetailSale();
+            ventaMinorista.SetVenta(100m);
+            decimal totalRetail = p5.ObtenerImporteFinal(ventaMinorista);
+            Console.WriteLine($"Total Minorista: {totalRetail}");
+
+            Sale ventaMayorista = new WholesaleSale();
+            ventaMayorista.SetVenta(100m);
+            decimal totalWholesale = p5.ObtenerImporteFinal(ventaMayorista);
+            Console.WriteLine($"Total Mayorista: {totalWholesale}");
+
+            //PROBLEMA 6
+            Console.WriteLine("\n=== PROBLEMA 6 ===");
+
 
             Console.WriteLine("\nPresiona cualquier tecla para salir...");
             Console.ReadKey();
