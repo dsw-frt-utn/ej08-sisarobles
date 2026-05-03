@@ -3,6 +3,7 @@ using Dsw2026Ej8.Problema_N_2;
 using Dsw2026Ej8.Problema_N_3;
 using Dsw2026Ej8.Problema_N_4;
 using Dsw2026Ej8.Problema_N_5;
+using Dsw2026Ej8.Problema_N_6;
 
 namespace Dsw2026Ej8
 {
@@ -67,7 +68,12 @@ namespace Dsw2026Ej8
 
             //PROBLEMA 6
             Console.WriteLine("\n=== PROBLEMA 6 ===");
+            string entrada = "  cod 456 test  ";
+            string salida = entrada.ToProductCode();
+            Console.WriteLine(salida);
 
+            string entradaNula = null;
+            Console.WriteLine(entradaNula.ToProductCode());
 
             Console.WriteLine("\nPresiona cualquier tecla para salir...");
             Console.ReadKey();
